@@ -1,8 +1,16 @@
-
+// Fonts ->
 $base-font-family: 'Poppins', sans-serif; 
+
+//Colors ->
 $color-beige: #F7C7B9;
 $color-white: #F9F9F9;
 $color-red: #DA2535;
 $color-grey: #404040;
 $color-light-gray: #8D8D8D;
 $color-pink-gray: #F5DADC;
+
+// Media Query Breakpoints
+$breakpoint-small : 600px;
+$breakpoint-medium : 768px;
+$breakpoint-laptop : 992px;
+$breakpoint-desktop : 1200px;

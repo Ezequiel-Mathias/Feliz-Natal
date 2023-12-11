@@ -1,10 +1,7 @@
 import React from "react";
-import Icon from "../../components/Icon";
 import Button from "../../components/Button";
 import CardAccessories from "../../components/CardAccessories";
 import ButtonContact from "../../components/ButtonContact";
-
-
 
 const PageHome: React.FC = () => {
     return (
@@ -68,9 +65,9 @@ const PageHome: React.FC = () => {
 
             <section className="container-celebrate">
 
-
-                <img src="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/maos-com-presente.svg?alt=media&token=14c6d462-2b5d-432e-a11a-9ab3ae33763b" alt="" />
-
+                <div className="container-image-hands-with-gift">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/maos-com-presente.svg?alt=media&token=14c6d462-2b5d-432e-a11a-9ab3ae33763b" alt="" />
+                </div>
 
                 <div className="celebrate">
                     <h1>Comemore com muito amor!</h1>
@@ -82,16 +79,22 @@ const PageHome: React.FC = () => {
 
 
             <footer>
-                
+
                 <div className="container-celebration">
                     <img src="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/face-papai-noel.svg?alt=media&token=20e172ac-6db3-453d-88f8-65d0bf8dcae4" alt="" />
                     <h2>Feliz Natal</h2>
                 </div>
 
                 <div className="container-contact">
-                    <ButtonContact img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/linkedin.svg?alt=media&token=0f960041-f6e8-4708-8a1e-12faeef1762b"/>
-                    <ButtonContact img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/email.svg?alt=media&token=bd8a0215-86d8-41cb-bf31-1afb972c5146"/>
-                    <ButtonContact img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/github.svg?alt=media&token=e1c93f38-ecca-4a4c-b937-ebff7de34b6f" />
+                    <ButtonContact
+                        img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/linkedin.svg?alt=media&token=0f960041-f6e8-4708-8a1e-12faeef1762b"
+                        link="https://www.linkedin.com/in/ezequiel-mathias-104092227" />
+                    <ButtonContact
+                        img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/email.svg?alt=media&token=bd8a0215-86d8-41cb-bf31-1afb972c5146"
+                        link="mailto:ezequielmathias32@gmail.com" />
+                    <ButtonContact
+                        img="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/github.svg?alt=media&token=e1c93f38-ecca-4a4c-b937-ebff7de34b6f"
+                        link="https://github.com/Ezequiel-Mathias" />
                 </div>
 
             </footer>
