@@ -1,0 +1,22 @@
+
+/* Global stylizations */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "./vars.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $base-font-family;
+}
+
+
+//Import Pages
+
+@import '../styles/Pages/Home/index.scss';
+
+//Import Components
+
+@import '../styles/Components/Button/index.scss';
+@import '../styles/Components/CardAccessories/index.scss';
+@import '../styles/Components/ButtonContact/index.scss'

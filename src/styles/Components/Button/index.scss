@@ -1,0 +1,16 @@
+.container-button{
+    width: max-content;
+    height: 48px;
+    background-color: $color-red;
+    border-radius: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    font-weight: bolder;
+}
