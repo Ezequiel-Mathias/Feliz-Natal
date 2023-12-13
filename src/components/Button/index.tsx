@@ -12,7 +12,6 @@ const Button: React.FC<ButtonProps> = ({ text }) => {
         <div className="container-button">
              <img src="https://firebasestorage.googleapis.com/v0/b/feliz-natal-f7062.appspot.com/o/presente-Icon.svg?alt=media&token=a0621b0c-d439-4e8a-b2f5-ff5708cb1bd8" alt="" />
             {text}
-           
         </div>
     )
 }

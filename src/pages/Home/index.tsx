@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../components/Button";
 import CardAccessories from "../../components/CardAccessories";
 import ButtonContact from "../../components/ButtonContact";
+import Icon from "../../components/Icon";
 
 const PageHome: React.FC = () => {
+
+    const [sideBar, setSideBar] = useState(false);
+
+    const handleSideBar = () => setSideBar(!sideBar)
     return (
 
         <div className="container-page-home">
@@ -18,12 +23,15 @@ const PageHome: React.FC = () => {
                 <nav>
 
                     <ul>
+
                         <li>Início</li>
                         <li>Acessórios</li>
                         <li>Doação</li>
                         <li>Contato</li>
 
                     </ul>
+
+                    <Icon name="menu" onClick={handleSideBar} />
 
                 </nav>
 
@@ -36,7 +44,7 @@ const PageHome: React.FC = () => {
                 <div className="greetings">
                     <h1>Feliz Natal e Feliz Ano Novo!</h1>
                     <p>Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
-                    <Button text="Fazer uma doação" />
+                    <Button text="Fazer doação" />
                 </div>
 
                 <div className="container-image-hands">
@@ -98,6 +106,28 @@ const PageHome: React.FC = () => {
                 </div>
 
             </footer>
+
+
+            {
+                sideBar &&
+                <div className="container-sidbar">
+
+                    <div className="container-icon-close">
+                        <Icon name="close" onClick={handleSideBar} />
+                    </div>
+
+                    <nav>
+                        <ul>
+
+                            <li>Início</li>
+                            <li>Acessórios</li>
+                            <li>Doação</li>
+                            <li>Contato</li>
+
+                        </ul>
+                    </nav>
+                </div>
+            }
 
 
         </div>
